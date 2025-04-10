@@ -1,6 +1,4 @@
-Sure! Here's your **organized and neatly formatted** notes on **Lists and Dictionaries** in Python:
 
----
 
 # **LISTS and DICTIONARIES**
 
@@ -205,6 +203,3 @@ list2 = list1  # Refers to same list!
 ✔ Use list comprehension for efficient construction.  
 ✔ Use `.copy()` to avoid reference issues.
 
----
-
-Let me know if you'd like to include **Dictionaries** next, or if you want this exported to a PDF/Word document or Markdown file!
