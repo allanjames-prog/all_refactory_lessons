@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Fade-in effect on page load */
+body {
+  position: relative;
+  background-color: #a3beb2;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+
+#intro-text {
+  text-align: start;
+  font-size: small;
+  background-image: url(../images/plant-8054344_1920.jpg);
+  background-size: cover;
+  border-radius: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 15px 15px 10px rgba(141, 141, 141, 0.226);
+}
+
+#left-col {
+  background-image: url(../images/cashew-nuts-7807143_1920.jpg);
+  background-size: cover;
+  border-radius: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blured-div {
+  margin: auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  backdrop-filter: blur(10px);
+  min-height: 90%;
+  width: 95%;
+  padding: 15px;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blured-div h4 {
+  margin-left: 50px;
+  margin-top: auto; 
+  color: aliceblue;
+  font-family: roboto slab;
+  font-weight: 100;
+  font-size: medium;
+}
+
+.blured-div a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: roboto slab;
+  font-weight: 200;
+  font-size: medium;
+  position: relative;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+
+.blured-div a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust this to move the underline closer or farther */
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background-color: currentColor;
+  transition: width 0.15s ease-in-out;
+}
+
+.blured-div a:hover::after {
+  width: 85px;
+}
+
+
+.sign-up-heading {
+  color: #163023;
+  font-size: larger;
+  font-family: roboto slab;
+}
+
+.grey-text {
+  color: rgb(202, 202, 202);
+} 
+
+h1 {
+  margin-top: 5%;
+  font-family: roboto slab;
+  font-weight: 400;
+  font-size: 50px;
+  color: rgb(183, 255, 183);
+}
+h5 {
+  font-family: Dancing script;
+  color: rgb(255, 185, 145);  
+}
+
+.blured-div h4 {
+  margin-top: auto;
+}
+
+.row {
+  background-color: rgba(231, 231, 231, 0.815);
+  border-radius: 10px;
+  padding: 5%;
+  box-shadow: 15px 15px 10px rgba(141, 141, 141, 0.226);
+}
+
+.col {
+  background-color: rgba(231, 231, 231, 0.815);
+}
+
+#right {
+  padding: 40px;
+  background-color: rgba(231, 231, 231, 0.815);
+  border-radius: 10px;
+}
+
+.form-control, .nav-item {
+  background: #e0e5ec;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 
+    4px 4px 8px rgba(110, 118, 131, 0.6), 
+    -4px -4px 8px rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+
+.form-control:focus, #submit-btn {
+  background: #e0e5ec;
+  box-shadow: 
+    4px 4px 8px rgba(110, 118, 131, 0.6), 
+    -4px -4px 8px rgb(255, 255, 255);
+  border-color: rgb(211, 211, 211);
+}
+
+.form-control:hover {
+  background: #dfdfdf;
+  box-shadow: 
+    4px 4px 8px rgba(110, 118, 131, 0.9), 
+    -4px -4px 8px rgb(255, 255, 255);
+ 
+}
+
+#submit-btn:hover {
+  background: rgba(42, 59, 59, 0.63);
+  box-shadow: 
+    4px 4px 8px rgba(110, 118, 131, 0.9), 
+    -4px -4px 8px rgb(255, 255, 255);
+}
+
+#submit-btn {
+  width: 50%;
+  background-color: rgb(151, 66, 66);
+  border-style: none; 
+  transition: all 0.2s ease;
+}
+
+#forgot-password {
+  width: 100%;
+  color: rgb(0, 53, 20);
+  border-style: none; 
+  transition: all 0.2s ease;
+  margin: 10px;
+  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#forgot-password:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#exampleCheck1 {
+  appearance: none; 
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 2px solid rgba(112, 129, 129, 0.63);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#exampleCheck1:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(21, 29, 29, 0.8);
+}
+
+#exampleCheck1:checked {
+  background-color: rgba(21, 29, 29, 0.63);
+}
+
+/* Style the icon inside the button */
+.navbar-toggler-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Style the button */
+.navbar-toggler {
+  background-color: #c2c2c200; /* Example: Change background color */
+  border-radius: 5px;
+  border-style: none;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+#offcanvasNavbar {
+  border-radius: 17px;
+  width: 300px;
+}
+
+.nav-item {
+  margin-bottom: 12px;
+  font-family: Roboto Slab;
+  font-weight: bolder;
+  color: black;
+}
+
+.nav-item:hover {
+  background: #dfdfdf;
+  box-shadow: 
+    4px 4px 8px rgba(110, 118, 131, 0.9), 
+    -4px -4px 8px rgb(255, 255, 255);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.blured-div h4 {
+  position: relative;
+  color: aliceblue;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 100;
+  font-size: medium;
+  display: inline-block;
+  overflow: hidden; 
+  font-weight: bold;
+  color: transparent; 
+  background: linear-gradient(
+    270deg, rgba(255, 255, 255, 0) 0%, 
+    rgb(255, 255, 255) 25%, 
+    rgb(255, 255, 255) 75%, 
+    rgba(255, 255, 255, 0) 100%);
+  background-size: 200% 100%; 
+  -webkit-background-clip: text; 
+  background-clip: text;
+  animation: glow 2s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.accordion-body, .accordion-button, #acc-sign-in, #password-reset {
+  background-color: rgb(231, 231, 231);
+}
+
+
+.accordion-button::after {
+  display: none;
+}

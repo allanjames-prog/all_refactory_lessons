@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Director's Dashboard - Karibu Groceries LTD</title>
+
+    <!-- Link for Dancing Script fontstyle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- Link for Roboto Slab font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css-styles/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css-styles/login-styles.css">
+    <link rel="stylesheet" href="../css-styles/dir-dashboard.css">
+    
+  </head>
+  <body>
+
+    <div class="container mt-6">
+      <div class="col-auto">
+        <a href="../index.html" class="btn btn-primary">
+          <i class="bi bi-arrow-left"></i> Back
+        </a>
+      </div>
+      <h1 class="mb-3 text-center">Director's Dashboard</h1>
+      <p class="text-center">Monitor procurements, sales, inventory, and alerts.</p>
+    
+      <!-- Dashboard Cards -->
+      <div class="row mb-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="card shadow-lg border-0 text-white bg-primary">
+            <div class="card-body text-center">
+              <h5 class="card-title">Total Procurements</h5>
+              <p class="display-6 fw-bold">15,000 kg</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card shadow-lg border-0 text-white bg-success">
+            <div class="card-body text-center">
+              <h5 class="card-title">Total Sales</h5>
+              <p class="display-6 fw-bold">10,000 kg</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card shadow-lg border-0 text-white bg-warning">
+            <div class="card-body text-center">
+              <h5 class="card-title">Low Stock Alerts</h5>
+              <p class="display-6 fw-bold">5</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card shadow-lg border-0 text-white bg-danger">
+            <div class="card-body text-center">
+              <h5 class="card-title">Out of Stock Items</h5>
+              <p class="display-6 fw-bold">3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Recent Procurements -->
+      <div class="card shadow-sm mb-4">
+        <div class="card-header bg-primary text-white">
+          <h4 class="mb-0">Recent Procurements</h4>
+        </div>
+        <div class="card-body">
+          <table class="table table-striped table-hover">
+            <thead class="table-dark">
+              <tr>
+                <th>#</th>
+                <th>Produce Name</th>
+                <th>Type</th>
+                <th>Tonnage (kg)</th>
+                <th>Cost (UGX)</th>
+                <th>Dealer Name</th>
+                <th>Branch</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <td>Beans</td>
+                <td>Grain</td>
+                <td>2,000</td>
+                <td>4,000,000</td>
+                <td>John Doe</td>
+                <td>Maganjo</td>
+                <td>2025-02-10</td>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td>Maize</td>
+                <td>Grain</td>
+                <td>3,000</td>
+                <td>6,000,000</td>
+                <td>Jane Smith</td>
+                <td>Matugga</td>
+                <td>2025-02-08</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+    
+      <!-- Recent Sales -->
+      <div class="card shadow-sm">
+        <div class="card-header bg-success text-white">
+          <h4 class="mb-0">Recent Sales</h4>
+        </div>
+        <div class="card-body">
+          <table class="table table-striped table-hover">
+            <thead class="table-dark">
+              <tr>
+                <th>#</th>
+                <th>Produce Name</th>
+                <th>Tonnage (kg)</th>
+                <th>Amount Paid (UGX)</th>
+                <th>Buyer's Name</th>
+                <th>Sales Agent</th>
+                <th>Branch</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <td>Cow Peas</td>
+                <td>1,000</td>
+                <td>2,500,000</td>
+                <td>Alice Brown</td>
+                <td>Michael</td>
+                <td>Maganjo</td>
+                <td>2025-02-12</td>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td>Soybeans</td>
+                <td>500</td>
+                <td>1,250,000</td>
+                <td>Bob Johnson</td>
+                <td>Emily</td>
+                <td>Matugga</td>
+                <td>2025-02-11</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#" class="btn btn-success">View More</a>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="../javascript/js/bootstrap.js"></script>
+  </body>
+</html>

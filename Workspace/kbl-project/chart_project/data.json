@@ -1,0 +1,98 @@
+[
+    {
+        "Month":"January",
+        "Line 1":15,
+        "Line 2":29,
+        "Line 3":33,
+        "Line 4":32,
+        "Line 5":51
+    },
+    {
+        "Month":"February",
+        "Line 1":5,
+        "Line 2":25,
+        "Line 3":20,
+        "Line 4":32,
+        "Line 5":57
+    },
+    {
+        "Month":"March",
+        "Line 1":13,
+        "Line 2":27,
+        "Line 3":36,
+        "Line 4":32,
+        "Line 5":54
+    },
+    {
+        "Month":"April",
+        "Line 1":18,
+        "Line 2":18,
+        "Line 3":31,
+        "Line 4":37,
+        "Line 5":43
+    },
+    {
+        "Month":"May",
+        "Line 1":12,
+        "Line 2":12,
+        "Line 3":23,
+        "Line 4":40,
+        "Line 5":52
+    },
+    {
+        "Month":"June",
+        "Line 1":8,
+        "Line 2":11,
+        "Line 3":21,
+        "Line 4":37,
+        "Line 5":44
+    },
+    {
+        "Month":"July",
+        "Line 1":9,
+        "Line 2":26,
+        "Line 3":32,
+        "Line 4":34,
+        "Line 5":55
+    },
+    {
+        "Month":"August",
+        "Line 1":13,
+        "Line 2":28,
+        "Line 3":34,
+        "Line 4":33,
+        "Line 5":41
+    },
+    {
+        "Month":"September",
+        "Line 1":12,
+        "Line 2":10,
+        "Line 3":39,
+        "Line 4":42,
+        "Line 5":54
+    },
+    {
+        "Month":"October",
+        "Line 1":19,
+        "Line 2":16,
+        "Line 3":37,
+        "Line 4":36,
+        "Line 5":59
+    },
+    {
+        "Month":"November",
+        "Line 1":19,
+        "Line 2":19,
+        "Line 3":37,
+        "Line 4":47,
+        "Line 5":47
+    },
+    {
+        "Month":"December",
+        "Line 1":9,
+        "Line 2":20,
+        "Line 3":34,
+        "Line 4":46,
+        "Line 5":40
+    }
+]

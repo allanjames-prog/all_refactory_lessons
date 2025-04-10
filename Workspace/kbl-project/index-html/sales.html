@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sales - Karibu Groceries LTD</title>
+
+    <!-- Link for Dancing Script fontstyle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- Link for Roboto Slab font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css-styles/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css-styles/sales-styles.css">
+    
+  </head>
+  <body>
+
+    <div class="container mt-5">
+      <div class="col-auto mb-4">
+        <a href="../index.html" class="btn btn-primary">
+          <i class="bi bi-arrow-left"></i> Back
+        </a>
+      </div>
+
+      <h1>Sales Entry Form</h1>
+      <p>Record all sales at Karibu Groceries LTD.</p>
+
+      <form>
+        <div class="mb-3">
+          <label for="produceName" class="form-label">Name of Produce</label>
+          <input type="text" class="form-control" id="produceName" required>
+        </div>
+        <div class="mb-3">
+          <label for="tonnage" class="form-label">Tonnage (kg)</label>
+          <input type="number" class="form-control" id="tonnage" required>
+        </div>
+        <div class="mb-3">
+          <label for="amountPaid" class="form-label">Amount Paid (UGX)</label>
+          <input type="number" class="form-control" id="amountPaid" required>
+        </div>
+        <div class="mb-3">
+          <label for="buyerName" class="form-label">Buyer's Name</label>
+          <input type="text" class="form-control" id="buyerName" required>
+        </div>
+        <div class="mb-3">
+          <label for="salesAgent" class="form-label">Sales Agent's Name</label>
+          <input type="text" class="form-control" id="salesAgent" required>
+        </div>
+        <div class="mb-3">
+          <label for="date" class="form-label">Date</label>
+          <input type="date" class="form-control" id="date" required>
+        </div>
+        <div class="mb-3">
+          <label for="time" class="form-label">Time</label>
+          <input type="time" class="form-control" id="time" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <script src="../javascript/js/bootstrap.js"></script>
+  </body>
+</html>

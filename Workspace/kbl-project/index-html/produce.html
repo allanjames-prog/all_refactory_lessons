@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KGL Ltd - Produce Form</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css-styles/bootstrap-5.3.3-dist/css/bootstrap.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css-styles/produce-styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h1 class="text-center">Produce Entry Form</h1>
+          <form>
+            <div class="mb-3">
+              <label for="produceName" class="form-label">Produce Name</label>
+              <input type="text" class="form-control" id="produceName" required>
+            </div>
+            <div class="mb-3">
+              <label for="produceType" class="form-label">Type of Produce</label>
+              <input type="text" class="form-control" id="produceType" required pattern="[A-Za-z\s]{2,}">
+            </div>
+            <div class="mb-3">
+              <label for="date" class="form-label">Date</label>
+              <input type="date" class="form-control" id="date" required>
+            </div>
+            <div class="mb-3">
+              <label for="time" class="form-label">Time</label>
+              <input type="time" class="form-control" id="time" required>
+            </div>
+            <div class="mb-3">
+              <label for="tonnage" class="form-label">Tonnage (kgs)</label>
+              <input type="number" class="form-control" id="tonnage" required minlength="3">
+            </div>
+            <div class="mb-3">
+              <label for="cost" class="form-label">Cost (UGX)</label>
+              <input type="number" class="form-control" id="cost" required minlength="5">
+            </div>
+            <div class="mb-3">
+              <label for="dealerName" class="form-label">Dealer's Name</label>
+              <input type="text" class="form-control" id="dealerName" required pattern="[A-Za-z0-9\s]{2,}">
+            </div>
+            <div class="mb-3">
+              <label for="branchName" class="form-label">Branch Name</label>
+              <select class="form-select" id="branchName" required>
+                <option value="">Select Branch</option>
+                <option value="Kampala">Matugga</option>
+                <option value="Entebbe">Maganjo</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="contact" class="form-label">Dealer's Contact</label>
+              <input type="tel" class="form-control" id="contact" required pattern="^\+256\d{9}$" placeholder="+256XXXXXXXXX">
+            </div>
+            <div class="mb-3">
+              <label for="salePrice" class="form-label">Price to Sell At (UGX)</label>
+              <input type="number" class="form-control" id="salePrice" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+          </form>
+          <button onclick="goBack()" class="btn btn-secondary w-100 mt-3">Back</button>
+        </div>
+      </div>
+    </div>
+
+   
+
+    <script src="../javascript/js/bootstrap.js"></script>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>

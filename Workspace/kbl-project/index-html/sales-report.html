@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sales - Karibu Groceries LTD</title>
+
+    <!-- Link for Dancing Script fontstyle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- Link for Roboto Slab font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css-styles/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css-styles/sales-report.css">
+    
+  </head>
+  <body class="mx-5">
+
+    <!-- Sales Summary (Key Metrics) -->
+    <div class="row ">
+      <div class="col-sm-3">
+          <div class="card bg-light">
+              <div class="card-body">
+                  <h5 class="card-title">Total Sales (UGX)</h5>
+                  <p class="card-text">UGX 10,500,000</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="card bg-light">
+              <div class="card-body">
+                  <h5 class="card-title">Total Sales This Month (UGX)</h5>
+                  <p class="card-text">UGX 3,200,000</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="card bg-light">
+              <div class="card-body">
+                  <h5 class="card-title">Total Products Sold</h5>
+                  <p class="card-text">3,500 kg</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="card bg-light">
+              <div class="card-body">
+                  <h5 class="card-title">Deferred Payments (UGX)</h5>
+                  <p class="card-text">UGX 1,000,000</p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Sales Trends & Charts -->
+
+    <!-- Sales Trends and Charts -->
+    <h2 class="mb-3">Sales Trends</h2>
+    <!-- Pie Chart Placeholder -->
+    <div id="pieChartContainer">
+        <!-- Include your Pie Chart here -->
+    </div>
+
+    <!-- Donut Chart Placeholder -->
+    <div id="donutChartContainer">
+        <!-- Include your Donut Chart here -->
+    </div>
+
+    <!-- Sales Breakdown (By Product) -->
+    <h2 class="mb-3">Sales Breakdown</h2>
+    <table class="table table-bordered">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Total Sold (kg)</th>
+                <th scope="col">Total Revenue (UGX)</th>
+                <th scope="col">Average Price per kg (UGX)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Beans</td>
+                <td>1,200</td>
+                <td>UGX 3,600,000</td>
+                <td>UGX 3,000</td>
+            </tr>
+            <tr>
+                <td>Maize</td>
+                <td>900</td>
+                <td>UGX 2,700,000</td>
+                <td>UGX 3,000</td>
+            </tr>
+            <tr>
+                <td>G-nuts</td>
+                <td>500</td>
+                <td>UGX 1,500,000</td>
+                <td>UGX 3,000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Sales Records Table (By Date & Branch) -->
+    <h2 class="mb-3">Detailed Sales Records</h2>
+    <table class="table table-bordered">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Branch</th>
+                <th scope="col">Product</th>
+                <th scope="col">Tonnage (kg)</th>
+                <th scope="col">Total Amount (UGX)</th>
+                <th scope="col">Buyer</th>
+                <th scope="col">Sales Agent</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2025-02-18</td>
+                <td>Branch A</td>
+                <td>Beans</td>
+                <td>200</td>
+                <td>UGX 600,000</td>
+                <td>John Doe</td>
+                <td>Jane Smith</td>
+            </tr>
+            <tr>
+                <td>2025-02-18</td>
+                <td>Branch B</td>
+                <td>Maize</td>
+                <td>150</td>
+                <td>UGX 450,000</td>
+                <td>Jane Doe</td>
+                <td>John Smith</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Credit Sales Report -->
+    <h2 class="mb-3">Credit Sales Report</h2>
+    <table class="table table-bordered">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Buyer</th>
+                <th scope="col">NIN</th>
+                <th scope="col">Location</th>
+                <th scope="col">Contact</th>
+                <th scope="col">Amount Due (UGX)</th>
+                <th scope="col">Due Date</th>
+                <th scope="col">Sales Agent</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Michael Okello</td>
+                <td>CF24567890QWERT</td>
+                <td>Kampala</td>
+                <td>0777123456</td>
+                <td>UGX 500,000</td>
+                <td>2025-03-01</td>
+                <td>James Allan</td>
+            </tr>
+        </tbody>
+    </table>
+
+  
+
+  
+  </body>
+</html>

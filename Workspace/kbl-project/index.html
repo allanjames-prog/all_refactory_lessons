@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Karibu Groceries LTD</title>
+
+    <!-- Link for Dancing Script fontstyle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link for Roboto Slab font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="css-styles/bootstrap-5.3.3-dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="css-styles/home-styles.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar fixed-top">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <!-- Offcanvas header -->
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">KGL</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <!-- Offcanvas body -->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto justify-content-end flex-grow-1 pe-3">
+              <!-- Home page -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+
+              <!-- Produce procurement page -->
+              <li class="nav-item">
+                <a class="nav-link" href="index-html/produce.html"
+                  >Produce Procurement</a
+                >
+              </li>
+
+              <!-- Sales page -->
+              <li class="nav-item">
+                <a class="nav-link" href="index-html/sales.html">Sales</a>
+              </li>
+
+              <!-- Deferred Payments page -->
+              <li class="nav-item">
+                <a class="nav-link" href="index-html/dfd-payments.html"
+                  >Deferred Payments</a
+                >
+              </li>
+              <!-- Inventory Page -->
+              <li class="nav-item">
+                <a class="nav-link" href="index-html/inventory.html"
+                  >Inventory</a
+                >
+              </li>
+
+              <!-- Manager Dashboard page -->
+              <li class="nav-item">
+                <a class="nav-link" href="index-html/m-dashboard.html"
+                  >Manager's Dashboard</a
+                >
+              </li>
+
+              <!-- Director Dashboard page -->
+              <li class="nav-item">
+                <a class="nav-link" href="index-html/dir-dashboard.html"
+                  >Director Dashboard</a
+                >
+              </li>
+
+              <!-- Login/Authentication page -->
+              <li class="nav-item">
+                <a class="nav-link" href="index-html/log-in-page.html">Login</a>
+              </li>
+
+              <!-- Contact page -->
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="index-html/contact-page.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+
+            <!-- Search bar -->
+            <form class="d-flex mt-3 mb-5" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Bootstrap Carousel -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="images/beans.jpg" class="d-block w-100 c-img" alt="Beans" />
+          <div class="carousel-caption d-md-block overlay">
+            <h1 class="fw-bold fs-1 fs-md-2 fs-lg-3">KARIBU GROCERIRES LTD</h1>
+            <h5 class="fs-3 fs-md-4 fs-lg-5">Fresh Beans</h5>
+            <p>
+              Premium beans packed with flavor and nutrition—straight from farm
+              to your table.
+            </p>
+          </div>
+        </div>
+
+        <div class="carousel-item c-item">
+          <img
+            src="images/cow-peas.webp"
+            class="d-block w-100 c-img"
+            alt="Cow-peas"
+          />
+          <div class="carousel-caption d-md-block overlay">
+            <h1 class="fw-bold fs-1 fs-md-2 fs-lg-3">KARIBU GROCERIRES LTD</h1>
+            <h5 class="fs-3 fs-md-4 fs-lg-5">Cow Peas</h5>
+            <p>
+              Rich in protein and fiber—perfect for hearty, wholesome meals.
+            </p>
+          </div>
+        </div>
+
+        <div class="carousel-item c-item">
+          <img
+            src="images/g-nuts.jpg"
+            class="d-block w-100 c-img"
+            alt="G-nuts"
+          />
+          <div class="carousel-caption d-md-block overlay">
+            <h1 class="fw-bold fs-1 fs-md-2 fs-lg-3">KARIBU GROCERIRES LTD</h1>
+            <h5 class="fs-3 fs-md-4 fs-lg-5">Groundnuts</h5>
+            <p>Crunchy, nutritious, and naturally fresh—snack smart.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item c-item">
+          <img
+            src="images/grain-maize.jpg"
+            class="d-block w-100 c-img"
+            alt="Grain Maize"
+          />
+          <div class="carousel-caption d-md-block overlay">
+            <h1 class="fw-bold fs-1 fs-md-2 fs-lg-3">KARIBU GROCERIRES LTD</h1>
+            <h5 class="fs-3 fs-md-4 fs-lg-5">Grain Maize</h5>
+            <p>Energy-packed maize for the foundation of a great meal.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item c-item">
+          <img
+            src="images/soybeans.webp"
+            class="d-block w-100 c-img"
+            alt="Soybeans"
+          />
+          <div class="carousel-caption d-md-block overlay">
+            <h1 class="fw-bold fs-1 fs-md-2 fs-lg-3">KARIBU GROCERIRES LTD</h1>
+            <h5 class="fs-3 fs-md-4 fs-lg-5">Soybeans</h5>
+            <p>Plant-powered protein for a healthier lifestyle.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Accounts -->
+    <div
+      class="row row-cols-1 row-cols-md-2 g-4 justify-content-center d-flex align-items-stretch"
+      id="hero"
+    >
+      <div class="col-md-4 d-flex">
+        <div class="card flex-fill shadow-lg border-0 card-color">
+          <div class="card-body">
+            <h5 class="card-title text-primary fw-bold">
+              <i class="fas fa-user-tie"></i> Director
+            </h5>
+            <hr />
+            <h6 class="text-success fw-semibold">
+              <i class="fas fa-check-circle"></i> Access Rights:
+            </h6>
+            <ul class="list-unstyled ps-3">
+              <li>
+                <i class="fas fa-chart-line text-success"></i> View total sales
+                and aggregated reports from all branches.
+              </li>
+              <li>
+                <i class="fas fa-eye text-success"></i> Monitor overall business
+                performance without editing privileges.
+              </li>
+              <li>
+                <i class="fas fa-ban text-warning"></i> Cannot view individual
+                sales records, only aggregated figures.
+              </li>
+            </ul>
+            <h6 class="text-danger fw-semibold">
+              <i class="fas fa-lock"></i> Restrictions:
+            </h6>
+            <ul class="list-unstyled ps-3">
+              <li>
+                <i class="fas fa-times-circle text-danger"></i> Cannot record
+                sales or procurements.
+              </li>
+              <li>
+                <i class="fas fa-times-circle text-danger"></i> Cannot modify
+                product prices or inventory.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex">
+        <div class="card flex-fill shadow-lg border-0 card-color">
+          <div class="card-body">
+            <h5 class="card-title text-primary fw-bold">
+              <i class="fas fa-user-cog"></i> Manager – Oversees Branch
+              Operations
+            </h5>
+            <hr />
+            <h6 class="text-success fw-semibold">
+              <i class="fas fa-check-circle"></i> Access Rights:
+            </h6>
+            <ul class="list-unstyled ps-3">
+              <li>
+                <i class="fas fa-box-open text-success"></i> Can record produce
+                procurement (new stock entries).
+              </li>
+              <li>
+                <i class="fas fa-tags text-success"></i> Can set product prices
+                for items.
+              </li>
+              <li>
+                <i class="fas fa-cash-register text-success"></i> Can make sales
+                at the branch level.
+              </li>
+              <li>
+                <i class="fas fa-warehouse text-success"></i> Can view stock
+                levels and receive out-of-stock alerts.
+              </li>
+              <li>
+                <i class="fas fa-receipt text-success"></i> Can see all
+                transactions made within their branch.
+              </li>
+            </ul>
+            <h6 class="text-danger fw-semibold">
+              <i class="fas fa-lock"></i> Restrictions:
+            </h6>
+            <ul class="list-unstyled ps-3">
+              <li>
+                <i class="fas fa-times-circle text-danger"></i> Cannot modify
+                sales made by other agents.
+              </li>
+              <li>
+                <i class="fas fa-times-circle text-danger"></i> Cannot access
+                sales data from other branches.
+              </li>
+              <li>
+                <i class="fas fa-times-circle text-danger"></i> Cannot view
+                overall business financials (only the director can).
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6-md-4 d-flex">
+        <div class="card flex-fill card-color">
+          <div class="card-body">
+            <h5 class="card-title">Sales Agent – Handles Day-to-Day Sales</h5>
+            <h6>Access Rights:</h6>
+            <ul>
+              <li>Can record sales transactions at their respective branch.</li>
+              <li>Can record credit sales for trusted buyers.</li>
+              <li>
+                Can view stock levels (to check availability before selling).
+              </li>
+            </ul>
+            <h6>Restrictions:</h6>
+            <ul>
+              <li>Cannot record new stock entries (only managers can).</li>
+              <li>
+                Cannot set or change prices (prices are pre-determined by the
+                manager).
+              </li>
+              <li>
+                Cannot view aggregated sales reports (only the director can).
+              </li>
+              <li>Can only access records specific to their branch.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex">
+        <div class="card flex-fill card-color">
+          <div class="card-body">
+            <h5 class="card-title">Business Rules Summary:</h5>
+            <ol>
+              <li>
+                Stock is tracked automatically, and when an item is out of
+                stock, the manager is notified.
+              </li>
+              <li>Only managers can add new stock (sales agents cannot).</li>
+              <li>
+                Sales agents can only sell pre-priced items set by the manager.
+              </li>
+              <li>
+                Director can only view aggregated sales reports, not individual
+                transactions.
+              </li>
+              <li>
+                Credit sales must include buyer details (NIN, location, phone,
+                etc.).
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login and my accounts links -->
+    <div class="container" id="login-myacc">
+      <div class="row">
+        <div class="col-12 mb-3">
+          <a href="index-html/my-accounts.html">
+            <div class="card text-center">
+              <div class="card-body" id="my-acc">
+                <p><strong>My Account</strong></p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 mb-3">
+          <a href="index-html/log-in-page.html">
+            <div class="card text-center">
+              <div class="card-body">
+                <p><strong>Login</strong></p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-white mt-4">
+      <div class="container p-4">
+        <!-- Company Info -->
+        <div class="row bg-dark">
+          <div class="col-lg-4 col-md-6 mb-4 bg-dark">
+            <h5 class="text-uppercase">Karibu Groceries Ltd</h5>
+            <p>
+              Wholesale produce distributor specializing in cereals. Supplying
+              quality grains to businesses and individuals.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-4 col-md-6 mb-4 bg-dark">
+            <h5 class="text-uppercase">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index-html/index.html" class="text-white">Home</a>
+              </li>
+              <li>
+                <a href="index-html/inventory.html" class="text-white"
+                  >Inventory</a
+                >
+              </li>
+              <li>
+                <a href="index-html/sales-report.html" class="text-white"
+                  >Sales Report</a
+                >
+              </li>
+              <li>
+                <a href="index-html/contact-page.html" class="text-white"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-lg-4 col-md-12 mb-4 bg-dark">
+            <h5 class="text-uppercase">Contact Us</h5>
+            <p><i class="bi bi-geo-alt"></i> Maganjo & Matugga, Uganda</p>
+            <p><i class="bi bi-telephone"></i> +256 700 123 456</p>
+            <p><i class="bi bi-envelope"></i> info@karibugroceries.com</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="text-center p-3 bg-secondary text-white">
+        &copy; <span id="year"></span> Karibu Groceries Ltd. All rights
+        reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="javascript/js/bootstrap.js"></script>
+  </body>
+</html>

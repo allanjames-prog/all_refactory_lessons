@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Director's Dashboard - Karibu Groceries LTD</title>
+
+    <!-- Link for Dancing Script fontstyle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- Link for Roboto Slab font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css-styles/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css-styles/m-dashboard-styles.css">
+</head>
+<body class="container">
+      
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand text-primary fw-bold" href="log-in-page.html">KBL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+      
+
+
+    <!-- Main Content -->
+    <div class="container-fluid p-4">
+        <!-- Top Navigation -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>Welcome, Manager</h2>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Stock Distribution</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- Pie Chart -->
+                        <main class="container">
+                            <h1>Pie Charts using Css</h1>
+                            <h2>The simple Technique</h2>
+                            <figure class="charts">
+                                <div class="pie"></div>
+                                <figcaption class="legends">
+                                <span>America 40%</span>
+                                <span>Europe 25%</span>
+                                <span>Asia 20%</span>
+                                <span>Africa 15%</span>
+                                </figcaption>
+                            </figure>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Sales Breakdown</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- Donut Chart -->
+                        <div class="container">
+                            <h1>Donut Chart</h1>
+                            <h2>The simple Technique</h2>
+                            <figure class="charts">
+                                <div class="pie donut"></div>
+                                <figcaption class="legends">
+                                    <span>America 40%</span>
+                                    <span>Europe 25%</span>
+                                    <span>Asia 20%</span>
+                                    <span>Africa 15%</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Inventory Table -->
+            <div class="col-md-6">
+                
+                    <div class="card-header">
+                        <h5>Current Inventory</h5>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Produce</th>
+                                    <th>Stock (kg)</th>
+                                    <th>Price (UGX)</th>
+                                    <th>Sale Price (UGX)</th>
+                                    <th>Branch</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Beans</td>
+                                    <td>1200</td>
+                                    <td>3000</td>
+                                    <td>4500</td>
+                                    <td>Maganjo</td>
+                                </tr>
+                                <tr>
+                                    <td>Maize</td>
+                                    <td>200</td>
+                                    <td>2500</td>
+                                    <td>4000</td>
+                                    <td>Matugga</td>
+                                </tr>
+                                <tr>
+                                    <td>Peas</td>
+                                    <td>800</td>
+                                    <td>2800</td>
+                                    <td>4200</td>
+                                    <td>Kawempe</td>
+                                </tr>
+                                <tr>
+                                    <td>Peas</td>
+                                    <td>800</td>
+                                    <td>2800</td>
+                                    <td>4200</td>
+                                    <td>Kawempe</td>
+                                </tr>
+                                <tr>
+                                    <td>Peas</td>
+                                    <td>800</td>
+                                    <td>2800</td>
+                                    <td>4200</td>
+                                    <td>Kawempe</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                
+            </div>
+
+            <!-- Sales Report Table -->
+            <div class="col-md-6">
+                
+                    <div class="card-header">
+                        <h5>Sales Report</h5>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Produce</th>
+                                    <th>Sold (kg)</th>
+                                    <th>Revenue (UGX)</th>
+                                    <th>Branch</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Beans</td>
+                                    <td>400</td>
+                                    <td>1,800,000</td>
+                                    <td>Maganjo</td>
+                                    <td>12/03/2025</td>
+                                </tr>
+                                <tr>
+                                    <td>Maize</td>
+                                    <td>150</td>
+                                    <td>600,000</td>
+                                    <td>Matugga</td>
+                                    <td>12/03/2025</td>
+                                </tr>
+                                <tr>
+                                    <td>Cow Peas</td>
+                                    <td>300</td>
+                                    <td>1,260,000</td>
+                                    <td>Kawempe</td>
+                                    <td>12/03/2025</td>
+                                </tr>
+                                <tr>
+                                    <td>G-nuts</td>
+                                    <td>300</td>
+                                    <td>1,260,000</td>
+                                    <td>Kawempe</td>
+                                    <td>12/03/2025</td>
+                                </tr>
+                                <tr>
+                                    <td>Soybeans</td>
+                                    <td>300</td>
+                                    <td>1,260,000</td>
+                                    <td>Kawempe</td>
+                                    <td>12/03/2025</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div class="container"> 
+        <div class="row"> 
+
+            <div class="col-lg-2">
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card text-white bg-success mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Total Stock</h5>
+                                <p class="card-text">12,500 kg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card text-white bg-warning mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Low Stock Items</h5>
+                                <p class="card-text">3 Products</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card text-white bg-success mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Total Stock</h5>
+                                <p class="card-text">12,500 kg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card text-white bg-danger mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Out of Stock</h5>
+                                <p class="card-text">1 Product</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card text-white bg-success mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Total Stock</h5>
+                                <p class="card-text">12,500 kg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="row">
+
+                    <!-- Donut Chart -->
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Sales Breakdown</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="container">
+                            
+                                    <figure class="charts">
+                                        <div class="pie donut"></div>
+                                        
+                                        <figcaption class="legends">
+                                            <span>America 40%</span>
+                                            <span>Europe 25%</span>
+                                            <span>Asia 20%</span>
+                                            <span>Africa 15%</span>
+                                        </figcaption>
+                            
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Stock Distribution</h5>
+                            </div>
+                            <div class="card-body">
+                                <!-- Pie Chart -->
+                                <main class="container">
+                                
+                                    <figure class="charts">
+                                        <div class="pie"></div>
+                                
+                                        <figcaption class="legends">
+                                        <span>America 40%</span>
+                                        <span>Europe 25%</span>
+                                        <span>Asia 20%</span>
+                                        <span>Africa 15%</span>
+                                        </figcaption>
+    
+                                    </figure>
+                                </main>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+                
+        
+                
+                
+            </div>
+        </div> 
+    </div>
+
+
+    <script src="../javascript/js/bootstrap.js"></script>
+    <script src="/javascript/js/m-dashboard.js"></script>
+  </body>
+</html>

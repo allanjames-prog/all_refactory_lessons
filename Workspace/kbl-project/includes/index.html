@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Chart Visualization</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        canvas {
+            max-width: 800px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Monthly Data Comparison</h2>
+    <canvas id="barChart"></canvas>
+    
+    <script>
+        fetch('data.json') // Assuming the JSON data is stored in 'data.json'
+            .then(response => response.json())
+            .then(data => {
+                const labels = data.map(entry => entry.Month);
+                const datasets = ["Line 1", "Line 2", "Line 3", "Line 4", "Line 5"].map((line, index) => ({
+                    label: line,
+                    data: data.map(entry => entry[line]),
+                    backgroundColor: `rgba(${index * 50}, ${100 + index * 30}, ${200 - index * 40}, 0.7)`
+                }));
+
+                new Chart(document.getElementById('barChart').getContext('2d'), {
+                    type: 'bar',
+                    data: { labels, datasets },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: { position: 'top' }
+                        },
+                        scales: {
+                            x: { stacked: true },
+                            y: { stacked: true }
+                        }
+                    }
+                });
+            });
+    </script>
+</body>
+</html>

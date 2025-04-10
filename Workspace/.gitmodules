@@ -1,0 +1,6 @@
+[submodule "GitHub"]
+	path = GitHub
+	url = git@github.com:allanjames-prog/KBL-project.git
+[submodule "KBL-project"]
+	path = KBL-project
+	url = git@github.com:allanjames-prog/KBL-project.git

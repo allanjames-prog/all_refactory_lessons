@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Data Display</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        table {
+            margin-top: 20px;
+        }
+        .container {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sample Data</h1>
+        <p>This data is fetched dynamically from the Flask backend:</p>
+
+        <!-- Table to display the data -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>X Value</th>
+                    <th>Y Value</th>
+                </tr>
+            </thead>
+            <tbody id="data-table">
+                <!-- Data rows will go here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Fetch the data from the Flask API
+        fetch('/data')
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.getElementById('data-table');
+                data.forEach(item => {
+                    const row = document.createElement('tr');
+                    const xCell = document.createElement('td');
+                    const yCell = document.createElement('td');
+                    xCell.textContent = item.x;
+                    yCell.textContent = item.y;
+                    row.appendChild(xCell);
+                    row.appendChild(yCell);
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
