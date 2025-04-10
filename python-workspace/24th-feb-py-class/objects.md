@@ -32,8 +32,8 @@ Attributes are variables that belong to the object. You define them using `self`
 ```python
 class Dog:
     def __init__(self, name, age):
-        self.name = name
-        self.age = age
+        self.name = name # attribute 1
+        self.age = age # attribute 2
 
 dog1 = Dog("Rex", 5)
 print(dog1.name)  # Rex
@@ -58,7 +58,7 @@ class Dog:
     def __init__(self, name):
         self.name = name
 
-    def bark(self):
+    def bark(self): # method
         print(self.name + " says woof!")
 
 dog2 = Dog("Buddy")
